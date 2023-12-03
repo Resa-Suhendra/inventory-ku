@@ -1,0 +1,21 @@
+INFO - 2023-11-23 14:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 14:05:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Users::$db is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/taskmanager/public/index.php')
+CRITICAL - 2023-11-23 14:05:52 --> "paging" is not a valid Pager template.
+in SYSTEMPATH/Pager/Pager.php on line 122.
+ 1 SYSTEMPATH/Pager/Pager.php(122): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('paging')
+ 2 SYSTEMPATH/Pager/Pager.php(85): CodeIgniter\Pager\Pager->displayLinks('admin', 'paging')
+ 3 APPPATH/Views/admin/users/index.php(48): CodeIgniter\Pager\Pager->links('admin', 'paging')
+ 4 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/taskmanager/app/Views/admin/users/index.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/users/index', [], true)
+ 7 APPPATH/Controllers/Users.php(29): view('admin/users/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Users->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/taskmanager/public/index.php')
